@@ -1,0 +1,17 @@
+请不要在 ${intervalTime} 秒内频繁提交, &nbsp;&nbsp;<font style="color: #ff41a2;"><span id="intervalSecond"></span></font>&nbsp;
+<script>
+    var i = 3;
+    document.getElementById("intervalSecond").innerHTML = i;
+    setInterval(function () {
+        i--;
+        document.getElementById("intervalSecond").innerHTML = i;
+        if (i < 0) {
+            i = 0;
+        }
+        if (i == 0) {
+            setTimeout(function () {
+                window.location.reload();
+            }, 1000);
+        }
+    }, 1000);
+</script>

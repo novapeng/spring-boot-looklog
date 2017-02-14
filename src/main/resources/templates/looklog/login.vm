@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="post" action="logon">
+    $!{errorMsg}<br>
+    pwd : <input name="pwd" type="password" size="18" /> <br>
+    vcode : <input name="vCode" size="10"> &nbsp;&nbsp;<img src="vcode?sid=${sid}"><br>
+    <input type="hidden" name="sid" value="${sid}">
+    <input type="submit">
+</form>
+
+</body>
+</html>
